@@ -1,1 +1,6 @@
-
+.main {
+  height: 100vh;
+  background-image: url("papillon-sonnette.JPG");
+  background-size: cover;
+  background-position: center;
+}
