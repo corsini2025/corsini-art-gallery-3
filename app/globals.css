@@ -10,7 +10,7 @@ body {
 
 .main {
   min-height: 100vh;              /* plein écran */
-  background-image: url("/papillon-a.jpg"); /* vérifie le NOM exact */
+  background-image: url("/ca3-logo-rouge.jpg"); /* vérifie le NOM exact */
   background-size: cover;          /* couvre toute la fenêtre */
   background-position: center;     /* centré */
   background-repeat: no-repeat;    /* pas de répétition */
