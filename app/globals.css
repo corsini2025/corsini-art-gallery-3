@@ -1,4 +1,4 @@
-/* redeploy 2025-08-09 */
+/* redeploy 2025-08-11 */
 html, body {
   height: 100%;
   margin: 0;
@@ -9,12 +9,12 @@ body {
 }
 
 .main {
-  min-height: 100vh;              /* plein écran */
-  background-image: url("/ca3-logo-rouge.jpg"); /* vérifie le NOM exact */
-  background-size: cover;          /* couvre toute la fenêtre */
-  background-position: center;     /* centré */
-  background-repeat: no-repeat;    /* pas de répétition */
-  display: grid;                   /* CORSINI ART GALLERY */
+  min-height: 100vh; /* plein écran */
+  background-image: url("/ca3-logo-rouge.jpg"); /* image de fond */
+  background-size: cover; /* couvre toute la fenêtre */
+  background-position: center; /* centré */
+  background-repeat: no-repeat; /* pas de répétition */
+  display: grid; /* centrer le contenu */
   place-items: center;
 }
 
@@ -25,4 +25,5 @@ body {
   -webkit-backdrop-filter: blur(3px);
   color: white;
   text-transform: uppercase;
-  
+  letter-spacing: 0.08em;
+}
