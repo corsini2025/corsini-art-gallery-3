@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Nawel Wapi',
+  title: 'Corsini Art Gallery',
   description: 'Fond d’écran + test',
 };
 
