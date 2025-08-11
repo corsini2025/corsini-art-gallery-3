@@ -1,4 +1,4 @@
-export const metadata = {
+cexport const metadata = {
   title: 'Corsini Art Gallery',
   description: 'Fond d’écran + test',
 };
