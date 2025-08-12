@@ -1,24 +1,29 @@
-//* redeploy 2025-08-11 */
+/* redeploy 2025-08-12 */
 html, body {
   height: 100%;
   margin: 0;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #1a1a1a; /* noir-gris foncé */
+  color: #ffffff; /* blanc */
 }
 
-.main{
-  min-height:100vh;
-  background: #111 url("/ca3-logo-rouge.jpg") center / cover no-repeat;
-  display:grid;
-  place-items:center;
+.main {
+  min-height: 100vh;
+  background: #1a1a1a url("/nahuel-huapi-lac.png") center / cover no-repeat;
+  display: grid;
+  place-items: center;
 }
-.main h1{
-  margin:0;
-  padding:.6rem 1rem;
-  color:#fff;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  backdrop-filter:blur(3px);
-  -webkit-backdrop-filter:blur(3px);
+
+.main h1 {
+  margin: 0;
+  padding: .6rem 1rem;
+  color: #ffffff; /* blanc */
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
 }
