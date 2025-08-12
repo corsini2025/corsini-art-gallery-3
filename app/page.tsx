@@ -1,8 +1,29 @@
+
 export default function Page() {
   return (
-    <main className="main">
-      <h1>Corsini Art Gallery — test</h1>
-      <p>Page chargée avec succès.</p>
+    <main className="lac-container">
+      <svg className="lac-svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <filter id="ripple" x="-5%" y="-5%" width="110%" height="110%" filterUnits="objectBoundingBox">
+            <feTurbulence type="fractalNoise" baseFrequency="0.003 0.007" numOctaves="2" seed="8" result="noise">
+              <animate attributeName="baseFrequency" dur="18s" values="0.003 0.007; 0.004 0.008; 0.003 0.007" repeatCount="indefinite" />
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G">
+              <animate attributeName="scale" dur="18s" values="4;6;4" repeatCount="indefinite" />
+            </feDisplacementMap>
+          </filter>
+          <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopOpacity="0.10" />
+            <stop offset="100%" stopOpacity="0.55" />
+          </linearGradient>
+        </defs>
+        <image href="/lake.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" filter="url(#ripple)" />
+        <rect width="100%" height="100%" fill="url(#vignette)" />
+      </svg>
+      <section className="lac-content">
+        <h1>L'Ondulation du Lac</h1>
+        <p>Une animation discrète et organique, comme la respiration de l'eau.</p>
+      </section>
     </main>
   );
 }
